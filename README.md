@@ -38,4 +38,6 @@ If going through the source code doesn't do it for you, then no worries. Everyth
 - Dockerization & Akash Deployment
 - API calls on PolygonScan
 - Filebase S3 bucket management ([example](https://github.com/filebase/nodejs-example))
+
+
 You can read [this guide](https://medium.com/@figuregang/developing-deploying-on-akash-7aecd5d9d467) if you want a step-by-step tutorial that goes through the entire basics of much of the above!
