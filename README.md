@@ -1,9 +1,9 @@
 # gamestoplay-backend
 The backend for the digital gameshop built on Akash, Filebase, and Polygon(scan).
 
-## Try it yourself!
+## See it for yourself!
 
-Visit http://gamestoplay.hns.to.
+You can both visit the site here: http://gamestoplay.hns.to and see the video demo which showcases the project as well as a game purchase [here](https://youtu.be/psbLXoHMPis)!
 
 You will need:
 - Matic on Polygon (Get from [MaticSupply](https://matic.supply/))
@@ -22,7 +22,7 @@ You will need:
   
 - Add the example files to their respective buckets.
 
-- Deploy the [deploy.yaml] file to Akash after filling out the ENV variables.
+- Deploy the deploy.yaml file to Akash after filling out the ENV variables.
 
 - Your backend is now running! Without creating a frontend, it's quite hard to fully test it. If you want to build your own website, you can join the [Discord Server](https://discord.gg/sUmrVjDkKR) and ask for help.
 
