@@ -1,0 +1,13 @@
+{
+  "gameList": 
+  [
+    {
+      "name": "Game Name",
+      "appID": <APPID>,
+      "price": <PRICE>,
+      "reserved": 0,
+      "stock": <STOCK>,
+      "img": "IMAGE URL"
+    }
+  ]
+}

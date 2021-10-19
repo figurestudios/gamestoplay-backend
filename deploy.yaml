@@ -1,0 +1,46 @@
+version: "2.0"
+
+services:
+  gamestoplay:
+    image: figureprod/gamestoplay:test0.2
+    env: # keep all buckets private except BUCKET_PUBLIC_RESOURCES
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+      - POLYGONSCAN_API_KEY=
+      - POLYGON_WALLET=
+      - POLYGON_CONTRACT_ADDRESS=
+      - BUCKET_TRANSACTION_DETAILS=
+      - BUCKET_TRANSACTION_BACKUPS=
+      - BUCKET_ACTIVE_ORDERS=
+      - BUCKET_PUBLIC_RESOURCES=
+      - BUCKET_PRODUCT_KEYS=
+    expose:
+      - port: 3000
+        as: 80
+        to:
+          - global: true
+
+profiles:
+  compute:
+    gamestoplay:
+      resources:
+        cpu:
+          units: 1
+        memory:
+          size: 1Gi
+        storage:
+          size: 1Gi
+  placement:
+    gamestoplay:
+      attributes:
+        host: akash
+      pricing:
+        gamestoplay:
+          denom: uakt
+          amount: 1000
+
+deployment:
+  gamestoplay:
+    gamestoplay:
+      profile: gamestoplay
+      count: 1
